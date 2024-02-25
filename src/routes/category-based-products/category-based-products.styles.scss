@@ -1,0 +1,29 @@
+.category-based-products-container {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    margin: 0 auto;
+    margin-top: 7.5rem;
+    padding-bottom: 2.5rem;
+
+    @media (max-width: 1440px) {
+        column-gap: 2.5rem;
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    @media (max-width: 426px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 75%;
+    }
+}

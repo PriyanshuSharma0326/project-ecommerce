@@ -1,0 +1,133 @@
+.order-info-bar-account-page{
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--black);
+    position: relative;
+
+    .order-info {
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        max-height: 12rem;
+        gap: 1rem;
+
+        .product-image-container {
+            max-height: 100%;
+            width: 30%;
+            text-align: center;
+            padding: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .order-product-details {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 0.5rem;
+    
+            > h1 {
+                font-size: 1.05rem;
+            }
+    
+            h2 {
+                font-size: 0.9rem;
+                font-weight: 500;
+    
+                span {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .bind {
+                display: flex;
+                gap: 1.5rem;
+            }
+
+            .order-status {
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-1rem, -50%);
+    }
+
+    @media (max-width: 768px) {
+        .order-info {
+            max-height: 11rem;
+
+            .product-image-container {
+                width: 21%;
+            }
+        
+            .order-product-details {
+                width: 79%;
+        
+                > h1 {
+                    font-size: 1rem;
+                }
+        
+                h2 {
+                    font-size: 0.85rem;
+        
+                    span {
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 426px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1rem;
+
+        .order-info {
+            max-height: 12rem;
+
+            .product-image-container {
+                width: 22%;
+            }
+        
+            .order-product-details {
+                width: 78%;
+        
+                > h1 {
+                    font-size: 0.9rem;
+                }
+        
+                h2 {
+                    font-size: 0.8rem;
+        
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        button {
+            position: relative;
+            right: unset;
+            top: unset;
+            transform: unset;
+        }
+    }
+}

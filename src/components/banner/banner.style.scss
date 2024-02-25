@@ -1,0 +1,114 @@
+.banner-container {
+    width: 100vw;
+    height: 65vh;
+    background: url('https://firebasestorage.googleapis.com/v0/b/electronics-store-react.appspot.com/o/banner.jpeg?alt=media&token=4568f65f-81f4-4856-9d9b-3ff43aa7be51&_gl=1*1c5rmnv*_ga*MTUzNjc3MDU5Mi4xNjkzNzk5NTQ3*_ga_CW55HF8NVT*MTY5NjgyOTYzMC4xMjIuMS4xNjk2ODMwNDIxLjYwLjAuMA..');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 6rem;
+        padding-left: 4rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1 {
+            width: fit-content;
+            font-size: 4rem;
+            color: white;
+        }
+
+        h2 {
+            width: fit-content;
+            font-size: 1.75rem;
+            color: white;
+
+            span {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        button {
+            margin-top: 1.5rem;
+            width: 8rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .overlay {
+            padding-top: 5rem;
+            padding-left: 2.5rem;
+            gap: 1rem;
+    
+            h1 {
+                font-size: 3rem;
+            }
+    
+            h2 {
+                font-size: 1.35rem;
+            }
+    
+            button {
+                margin-top: 1.15rem;
+                width: 8rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 35vh;
+
+        .overlay {
+            padding-top: 5rem;
+            padding-left: 2.5rem;
+            gap: 1rem;
+    
+            h1 {
+                font-size: 2.5rem;
+            }
+    
+            h2 {
+                font-size: 1.15rem;
+            }
+        }
+    }
+
+    @media (max-width: 426px) {
+        height: 30vh;
+
+        .overlay {
+            padding-top: unset;
+            padding-left: 1.5rem;
+            gap: 0.8rem;
+            display: flex;
+            justify-content: center;
+    
+            h1 {
+                font-size: 1.4rem;
+            }
+    
+            h2 {
+                font-size: 0.65rem;
+            }
+
+            button {
+                margin-top: 0.5rem;
+                padding: 0.6rem;
+                width: 5.75rem;
+                font-size: 0.65rem;
+            }
+        }
+    }
+}
