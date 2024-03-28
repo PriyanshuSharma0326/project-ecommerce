@@ -182,7 +182,7 @@ function SignIn() {
 
             <table className="credentials">
                 <thead
-                onClick={() => fillWithSampleCredentials('davidwarner@cricket.com.au', '123456')} 
+                onClick={() => fillWithSampleCredentials('neerajwalia26@email.com', '123456')} 
                 >
                     <tr>
                         <th>User-1 credentials</th>
@@ -191,7 +191,7 @@ function SignIn() {
                 <tbody>
                     <tr>
                         <td>Email</td>
-                        <td>davidwarner@cricket.com.au</td>
+                        <td>neerajwalia26@email.com</td>
                     </tr>
                     <tr>
                         <td>Password</td>
@@ -202,7 +202,7 @@ function SignIn() {
 
             <table className="credentials">
                 <thead
-                onClick={() => fillWithSampleCredentials('shrutish539@email.com', '123456')} 
+                onClick={() => fillWithSampleCredentials('samualaltman@email.com', '123456')} 
                 >
                     <tr>
                         <th>User-2 credentials</th>
@@ -211,7 +211,7 @@ function SignIn() {
                 <tbody>
                     <tr>
                         <td>Email</td>
-                        <td>shrutish539@email.com</td>
+                        <td>samualaltman@email.com</td>
                     </tr>
                     <tr>
                         <td>Password</td>
